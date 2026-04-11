@@ -1,0 +1,95 @@
+.exo-panorama-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Use dvh if available for mobile browsers */
+  height: 100dvh;
+  perspective: 800px;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.exo-panorama-cube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1024px;
+  height: 1024px;
+  margin-top: -512px;
+  margin-left: -512px;
+  transform-style: preserve-3d;
+  animation: panCube 90s linear infinite;
+  will-change: transform;
+}
+
+.exo-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 1024px;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Push faces away by 511px instead of 512px, AND scale(1.02) to perfectly overlap the edges and destroy seams! */
+.face-front  { transform: rotateY(0deg) translateZ(-511px) scale(1.02); }
+.face-right  { transform: rotateY(-90deg) translateZ(-511px) scale(1.02); }
+.face-back   { transform: rotateY(-180deg) translateZ(-511px) scale(1.02); }
+.face-left   { transform: rotateY(90deg) translateZ(-511px) scale(1.02); }
+.face-top    { transform: rotateX(-90deg) translateZ(-511px) scale(1.02); }
+.face-bottom { transform: rotateX(90deg) translateZ(-511px) scale(1.02); }
+
+@keyframes panCube {
+  from { transform: translateZ(800px) rotateY(0deg); }
+  to { transform: translateZ(800px) rotateY(360deg); }
+}
+
+.vignette-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 10%, rgba(3, 3, 5, 0.95) 100%);
+}
+
+/* Mobile Lag Optimization */
+@media (max-width: 768px) {
+  .exo-panorama-cube {
+    animation: none !important;
+    transform: none !important;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0; margin: 0;
+    transform-style: flat; /* Disables 3D overhead */
+  }
+  
+  .exo-face {
+    display: none;
+  }
+
+  /* Only display the front face on mobile and do a highly optimized 2D pan */
+  .face-front {
+    display: block;
+    width: 100vw;
+    height: 100dvh;
+    transform: none !important;
+    background-position: center;
+    background-size: cover;
+    animation: mobilePan 40s ease-in-out infinite alternate !important;
+    will-change: transform;
+  }
+
+  @keyframes mobilePan {
+    from { transform: scale(1.05) translateX(-2%); }
+    to { transform: scale(1.05) translateX(2%); }
+  }
+}
