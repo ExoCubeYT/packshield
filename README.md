@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🛡️ PackShield
+<img src="./encrypt.png" alt="PackShield Logo" width="120"/>
+
+# PackShield
 
 **Blazing-fast, zero-backend encryption for Minecraft resource packs**  
 <sub>Secure • Private • Fully client-side</sub>
