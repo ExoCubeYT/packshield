@@ -23,11 +23,7 @@
 
 ## 🎬 Preview
 
-> *(Add a GIF or screenshot here to show PackShield in action)*
-
-```md
-![Preview](./preview.gif)
-```
+![Preview](./preview.png)
 
 ---
 
