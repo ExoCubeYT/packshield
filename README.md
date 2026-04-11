@@ -1,73 +1,112 @@
 <div align="center">
-  <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 20px; display: inline-block;">
-    <img src="https://img.shields.io/badge/Status-Active-emerald?style=for-the-badge" alt="Status" />
-    <img src="https://img.shields.io/badge/Security-AES--256--CFB8-violet?style=for-the-badge" alt="Security" />
-  </div>
-  
-  <br />
-  <h1>🛡️ PackShield</h1>
-  <p><b>Zero-backend, insanely fast client-side Minecraft resource pack encryption.</b></p>
+
+![Status](https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge)
+![Security](https://img.shields.io/badge/Security-AES--256--CFB8-8b5cf6?style=for-the-badge)
+
+# 🛡️ PackShield
+
+**Blazing-fast, zero-backend encryption for Minecraft resource packs**  
+<sub>Secure. Private. Fully client-side.</sub>
+
 </div>
 
 ---
 
-**PackShield** is an ultra-fast, beautifully designed browser-based utility that encrypts and decrypts Minecraft Bedrock Edition resource packs (`.mcpack` and `.zip`). 
+## 🚀 Overview
 
-Instead of dealing with CLI tools or sketchy upload websites, PackShield integrates a custom high-performance WebAssembly engine powered by Go directly into your browser.
+**PackShield** is a high-performance, browser-based utility for encrypting and decrypting **Minecraft Bedrock Edition** resource packs (`.mcpack` / `.zip`).
 
-## ✨ Features
-* **100% Private:** No uploads, no backend, no server. Everything is isolated securely inside your local machine.
-* **AES-256-CFB8 Encryption:** Flawlessly matches the Bedrock engine standard. Fully compatible with packs created by `mcrputil` and `Pack Essentials`.
-* **WASM Accelerated:** Encrypts massive HD texture packs blazingly fast without stuttering or freezing your browser tab.
-* **Premium UX:** Built with glassmorphism aesthetics, fluid micro-interactions, and a premium "vibe-coded" feel.
+No CLI tools. No file uploads. No shady services.
 
-## 🛠️ Tech Stack
-* **Frontend:** React 18, Vite, TailwindCSS v3
-* **Crypto Engine:** Go 1.22+ (Compiled to WebAssembly)
-* **Threading:** Dedicated Web Workers for zero-friction background processing
+Everything runs **locally in your browser**, powered by a custom **WebAssembly crypto engine built with Go**.
 
 ---
 
-## 🚀 Quick Start (Development)
+## ✨ Features
 
-Want to run PackShield locally or contribute? It takes less than a minute to spin up!
+- 🔒 **100% Private**  
+  No servers, no uploads — your files never leave your device.
 
-### Prerequisites
-* Node.js (v18+)
-* Go (v1.22+)
+- ⚡ **WASM-Powered Performance**  
+  Handles large HD packs smoothly with zero lag or freezing.
 
-### Standard Setup
+- 🧠 **AES-256-CFB8 Encryption**  
+  Fully compatible with the Bedrock encryption standard.
 
-**1. Clone the repository:**
+- 🎨 **Premium UI/UX**  
+  Clean glassmorphism design with smooth interactions.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer        | Technology |
+|--------------|-----------|
+| **Frontend** | React 18, Vite, TailwindCSS v3 |
+| **Engine**   | Go (compiled to WebAssembly) |
+| **Processing** | Web Workers (multi-threaded, non-blocking) |
+
+---
+
+## ⚡ Quick Start
+
+Get up and running in under a minute.
+
+### 📦 Prerequisites
+
+- Node.js (v18+)
+- Go (v1.22+)
+
+---
+
+### 🔧 Setup
+
+#### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/packshield.git
+git clone https://github.com/exocubeyt/packshield.git
 cd packshield
 ```
 
-**2. Install frontend dependencies:**
+#### 2. Install dependencies
 ```bash
 npm install
 ```
 
-**3. Compile the WebAssembly Crypto Engine:**
-If you're on Windows, simply run the PowerShell script:
+#### 3. Build the WebAssembly engine
+
+**Windows**
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\build_wasm.ps1
 ```
-*(For Linux or macOS, run `./build_wasm.sh` instead)*
 
-**4. Start the development server:**
+**Linux / macOS**
+```bash
+./build_wasm.sh
+```
+
+#### 4. Start development server
 ```bash
 npm run dev
 ```
 
-Visit the `localhost` URL shown in your terminal, and you're ready to encrypt!
+Open the local URL shown in your terminal — you're ready to go.
 
-## 🔒 Security Notice
-Your encryption key is generated locally on your machine via standard secure entropy (`crypto.getRandomValues`). **Please save your keys!** PackShield cannot magically bypass AES-256 to recover a lost key.
+---
 
-<div align="center">
+## 🔐 Security
 
-> If you enjoy this open-source project, please consider dropping a ⭐ on the repository!
+- Encryption keys are generated locally using:
+  ```js
+  crypto.getRandomValues()
+  ```
+- No keys or files are stored, logged, or transmitted.
 
-</div>
+> ⚠️ **Important:**  
+> If you lose your encryption key, it **cannot be recovered**.
+
+---
+
+## 🌟 Support
+
+If you like this project, consider giving it a ⭐  
+It helps more than you think.
