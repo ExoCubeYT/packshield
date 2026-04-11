@@ -148,5 +148,5 @@ It helps more than you think.
 
 ## 📜 License
 
-This project is licensed under the GPL-3.0 License.  
+This project is licensed under the PackShield Custom License v1.0  
 See the `LICENSE` file for details.
