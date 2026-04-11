@@ -50,20 +50,22 @@ export default function KeyInput({ keyStr, setKeyStr, onGenerate }) {
           placeholder:text-white/20`}
         />
         
-        <motion.button
-          whileTap={{ scale: 0.95 }}
-          whileHover={{ scale: 1.05 }}
-          onClick={handleGenerate}
-          className={`absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2 transition-all duration-300 backdrop-blur-md shadow-lg
-            ${justGenerated 
-              ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-400/50' 
-              : 'bg-white/10 hover:bg-white/15 text-white border border-white/20 hover:border-white/40'
-            }
-          `}
-        >
-          {justGenerated ? <Check className="w-4 h-4 drop-shadow-[0_0_5px_rgba(16,185,129,0.8)]" /> : <Shuffle className="w-4 h-4" />}
-          <span className="hidden sm:inline">{justGenerated ? 'Generated' : 'Gen Key'}</span>
-        </motion.button>
+        <div className="absolute right-2 top-1/2 -translate-y-1/2">
+          <motion.button
+            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.05 }}
+            onClick={handleGenerate}
+            className={`px-4 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2 transition-all duration-300 backdrop-blur-md shadow-lg
+              ${justGenerated 
+                ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-400/50' 
+                : 'bg-white/10 hover:bg-white/15 text-white border border-white/20 hover:border-white/40'
+              }
+            `}
+          >
+            {justGenerated ? <Check className="w-4 h-4 drop-shadow-[0_0_5px_rgba(16,185,129,0.8)]" /> : <Shuffle className="w-4 h-4" />}
+            <span className="hidden sm:inline">{justGenerated ? 'Generated' : 'Gen Key'}</span>
+          </motion.button>
+        </div>
       </div>
     </div>
   );
