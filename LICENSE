@@ -1,76 +1,74 @@
-**PackShield Custom License (Non-Commercial, Attribution Required) v1.0**
+PackShield License (Non-Commercial, Attribution Required) v1.1
 
 Copyright (C) 2026 ExoCubeYT
 
 ---
 
-### 1. Permission
+1. Grant of Permission
 
-You are allowed to:
-
-* Use this software
-* Fork and modify it
-* Create derivative works
+Permission is granted to any person to use, copy, modify, and distribute this software and its derivatives, subject to the conditions below.
 
 ---
 
-### 2. Non-Commercial Restriction
+2. Non-Commercial Use Only
 
-You may **NOT**:
+This software may NOT be used for commercial purposes.
 
-* Sell this software or any derivative
-* Use it in paid products or services
-* Monetize it in any form without permission
+Commercial use includes, but is not limited to:
+
+* Selling the software or any derivative work
+* Including the software in paid products or services
+* Offering the software as part of a paid service (including SaaS, hosting, or API access)
+* Generating revenue directly or indirectly from the software
 
 Commercial use requires explicit written permission from the author.
 
 ---
 
-### 3. Closed Source Allowed
+3. Closed Source Allowed
 
-You may:
-
-* Keep your modifications private
-* Distribute modified versions as closed-source
+You may modify the software and distribute modified versions in closed-source form.
 
 ---
 
-### 4. Attribution (REQUIRED)
+4. Attribution (Required)
 
-Any use, fork, or distribution must include:
+Any use, modification, or distribution of this software must include:
 
-* Credit to: **ExoCubeYT**
-* Link to the original repository
+* Clear and visible credit to "ExoCubeYT"
+* A link to the original repository
+
+Attribution must not be removed, hidden, or obscured.
 
 Example:
-
-> "Based on PackShield by ExoCubeYT"
-
----
-
-### 5. Redistribution
-
-You may redistribute the software (modified or not) ONLY if:
-
-* This license is included
-* Attribution is preserved
-* It is non-commercial
+"Based on PackShield by ExoCubeYT"
 
 ---
 
-### 6. No Warranty
+5. Redistribution
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+You may redistribute the software (modified or unmodified) only if:
 
----
-
-### 7. Termination
-
-Violation of this license automatically terminates your rights.
+* This license is included in full
+* Attribution requirements are met
+* The use is non-commercial
 
 ---
 
-### 8. Contact for Commercial Use
+6. No Warranty
 
-For commercial licensing:
-Contact: exocubeyt@modmatrix.in
+The software is provided "as is", without warranty of any kind, express or implied.
+
+---
+
+7. Termination
+
+Any violation of this license will automatically terminate your rights to use the software.
+
+---
+
+8. Commercial Licensing
+
+For commercial use, you must obtain a separate license from the author.
+
+Contact: [exocubeyt@modmatrix.in](mailto:exocubeyt@modmatrix.in)
