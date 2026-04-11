@@ -66,4 +66,8 @@ Visit the `localhost` URL shown in your terminal, and you're ready to encrypt!
 ## 🔒 Security Notice
 Your encryption key is generated locally on your machine via standard secure entropy (`crypto.getRandomValues`). **Please save your keys!** PackShield cannot magically bypass AES-256 to recover a lost key.
 
+<div align="center">
 
+> If you enjoy this open-source project, please consider dropping a ⭐ on the repository!
+
+</div>
