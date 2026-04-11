@@ -1,14 +1,33 @@
 <div align="center">
 
-![Status](https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge)
-![Security](https://img.shields.io/badge/Security-AES--256--CFB8-8b5cf6?style=for-the-badge)
-
 # 🛡️ PackShield
 
 **Blazing-fast, zero-backend encryption for Minecraft resource packs**  
-<sub>Secure. Private. Fully client-side.</sub>
+<sub>Secure • Private • Fully client-side</sub>
+
+<br/>
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit-22c55e?style=for-the-badge)](https://your-demo-link.com)
+[![GitHub Stars](https://img.shields.io/github/stars/exocubeyt/packshield?style=for-the-badge)](https://github.com/exocubeyt/packshield)
+[![License](https://img.shields.io/github/license/exocubeyt/packshield?style=for-the-badge)](https://github.com/exocubeyt/packshield/blob/main/LICENSE)
+
+<br/>
+
+![Status](https://img.shields.io/badge/Status-Active-22c55e?style=flat-square)
+![Security](https://img.shields.io/badge/Security-AES--256--CFB8-8b5cf6?style=flat-square)
+![Built With](https://img.shields.io/badge/Built_With-Go%20%2B%20WASM-blue?style=flat-square)
 
 </div>
+
+---
+
+## 🎬 Preview
+
+> *(Add a GIF or screenshot here to show PackShield in action)*
+
+```md
+![Preview](./preview.gif)
+```
 
 ---
 
@@ -16,7 +35,7 @@
 
 **PackShield** is a high-performance, browser-based utility for encrypting and decrypting **Minecraft Bedrock Edition** resource packs (`.mcpack` / `.zip`).
 
-No CLI tools. No file uploads. No shady services.
+No CLI tools. No uploads. No shady services.
 
 Everything runs **locally in your browser**, powered by a custom **WebAssembly crypto engine built with Go**.
 
@@ -28,13 +47,13 @@ Everything runs **locally in your browser**, powered by a custom **WebAssembly c
   No servers, no uploads — your files never leave your device.
 
 - ⚡ **WASM-Powered Performance**  
-  Handles large HD packs smoothly with zero lag or freezing.
+  Smooth handling of large HD packs without freezing.
 
 - 🧠 **AES-256-CFB8 Encryption**  
-  Fully compatible with the Bedrock encryption standard.
+  Matches Minecraft Bedrock’s native encryption standard.
 
-- 🎨 **Premium UI/UX**  
-  Clean glassmorphism design with smooth interactions.
+- 🎨 **Modern UI/UX**  
+  Glassmorphism-inspired design with fluid interactions.
 
 ---
 
@@ -44,13 +63,11 @@ Everything runs **locally in your browser**, powered by a custom **WebAssembly c
 |--------------|-----------|
 | **Frontend** | React 18, Vite, TailwindCSS v3 |
 | **Engine**   | Go (compiled to WebAssembly) |
-| **Processing** | Web Workers (multi-threaded, non-blocking) |
+| **Processing** | Web Workers (multi-threaded) |
 
 ---
 
 ## ⚡ Quick Start
-
-Get up and running in under a minute.
 
 ### 📦 Prerequisites
 
@@ -102,7 +119,27 @@ Open the local URL shown in your terminal — you're ready to go.
 - No keys or files are stored, logged, or transmitted.
 
 > ⚠️ **Important:**  
-> If you lose your encryption key, it **cannot be recovered**.
+> Lost your key? It **cannot be recovered**.
+
+---
+
+## 📌 Roadmap
+
+- [ ] Drag & drop UI improvements  
+- [ ] Batch encryption support  
+- [ ] Dark/light theme toggle  
+- [ ] Progress indicators for large packs  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo  
+2. Create a new branch  
+3. Make your changes  
+4. Submit a pull request  
 
 ---
 
@@ -110,3 +147,10 @@ Open the local URL shown in your terminal — you're ready to go.
 
 If you like this project, consider giving it a ⭐  
 It helps more than you think.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.  
+See the `LICENSE` file for details.
