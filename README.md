@@ -121,15 +121,6 @@ Open the local URL shown in your terminal — you're ready to go.
 
 ---
 
-## 📌 Roadmap
-
-- [ ] Drag & drop UI improvements  
-- [ ] Batch encryption support  
-- [ ] Dark/light theme toggle  
-- [ ] Progress indicators for large packs  
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome!
