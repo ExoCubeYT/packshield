@@ -33,7 +33,7 @@
 
 **PackShield** is a high-performance, browser-based utility for encrypting and decrypting **Minecraft Bedrock Edition** resource packs (`.mcpack` / `.zip`).
 
-No CLI tools. No uploads. No shady services.
+No CLI tools. No uploads to cloud. No shady services.
 
 Everything runs **locally in your browser**, powered by a custom **WebAssembly crypto engine built with Go**.
 
